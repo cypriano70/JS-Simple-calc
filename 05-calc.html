@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator</title>
+        <link rel="stylesheet" href="05-calc.css">
+    </head>
+    <body>
+        <div class = "liczby">
+        <button onclick="calc += 1; console.log(calc); result.value=calc">1</button>
+        <button onclick="calc += 2; console.log(calc); result.value=calc">2</button>
+        <button onclick="calc += 3; console.log(calc); result.value=calc" style="margin-right: 50px;">3</button>
+      
+        <button onclick="calc += ' + '; console.log(calc); result.value=calc">+</button>
+        <button onclick="calc += ' - '; console.log(calc); result.value=calc"n>-</button>
+        <button onclick="calc = eval(calc)+''; console.log(calc); console.log(typeof(calc)); result.value=calc">=</button>
+    </div>
+        <div class="liczby">
+        <button onclick="calc += 4; console.log(calc); result.value=calc">4</button>
+        <button onclick="calc += 5; console.log(calc); result.value=calc">5</button>
+        <button onclick="calc += 6; console.log(calc); result.value=calc" style="margin-right: 50px;">6</button>
+        
+            <button onclick="calc += ' * '; console.log(calc); result.value=calc">*</button>
+            <button onclick="calc += ' / '; console.log(calc); result.value=calc">/</button>
+            <button onclick="calc = ''; console.log(calc); console.log(typeof(calc)); result.value=calc">C</button>
+            </div> 
+        <div>
+        <button onclick="calc += 7; console.log(calc); result.value=calc">7</button>
+        <button onclick="calc += 8; console.log(calc); result.value=calc">8</button>
+        <button onclick="calc += 9; console.log(calc); result.value=calc" style="margin-right:51px">9</button>
+        <input id="result" readonly class="wynik" disabled="disabled">
+        </div>
+
+        
+       
+
+        <script>
+            let calc ="";
+            const result = document.getElementById("result")
+        </script>
+    </body>
+    
+</html>
